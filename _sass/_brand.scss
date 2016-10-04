@@ -1,0 +1,121 @@
+* {margin: 0; padding: 0;}
+
+.maleta {
+    margin: 90px;
+    position: relative;
+    width: 260px;
+    height: 160px;
+    border: 15px solid #000;
+  .alca{
+    width: 179px;
+    height: 46px;
+    background: #000;
+    z-index: 2;
+    position: absolute;
+    top: -68px;
+    left: -17px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    transform: scale(1) rotate(180deg);
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    .alca-off{
+              width: 135px;
+    height: 26px;
+    background: white;
+    transform: scale(1) rotate(180deg);
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+  }
+  .first-line{
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    top: 50px;
+    left: 30px;
+  }
+  .second-line{
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    top: 10px;
+    left: 30px;
+  }
+  .lines, .circles{
+    float: left;
+  }
+
+  .circles{
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 15px;
+    position: relative;
+    &.first{
+      top:-25px;
+      left: -15px;
+    }
+
+    &.second{
+      top:7px;
+      left: -50px;
+    }
+  }
+
+  .lines{
+    height: 15px;
+    width: 60px;
+    background: #000;
+    position: relative;
+    &.second{
+      top:-4px;
+      left: -31px;
+    }
+
+    &.third{
+      top:-5px;
+      left: -70px;
+    }
+
+    &.angle-up{
+      -webkit-transform: rotate(-35deg);
+      -moz-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg);
+      transform: rotate(-35deg);
+     }
+     &.angle-down{
+       -webkit-transform: rotate(35deg);
+       -moz-transform: rotate(35deg);
+       -ms-transform: rotate(35deg);
+       -o-transform: rotate(35deg);
+       transform: rotate(35deg);
+     }
+    &.long{
+      width: 70px;
+    }
+  }
+  .logo-caption {
+    font-family: Museo;
+    font-size: 65px;
+    position: absolute;
+    top: -19px;
+    left: 320px;
+    line-height: 101px;
+    .bolder{
+      font-weight: 700;
+    }
+    .tiny{
+      font-weight: 300;
+    }
+  }
+}

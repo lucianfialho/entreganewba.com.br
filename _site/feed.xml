@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Métricas Boss - Agência de Web Analytics!</title>
+    <description>A Métricas Boss é uma agência de Web Analytics e usabilidade. Conte com uma empresa certificada Google Analytics para sua gestão de web analytics.</description>
+    <link>http://metricasboss.com.br/</link>
+    <atom:link href="http://metricasboss.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Oct 2016 17:10:27 -0300</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 17:10:27 -0300</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Web Analytics é mais do que um gráfico bonitinho!</title>
+        <description>&lt;amp-img src=&quot;/img/uploads/2015/03/Navegador-e-sistema-operacional-Google-Analytics.png&quot; width=&quot;1080&quot; height=&quot;610&quot; layout=&quot;responsive&quot; alt=&quot;Navegador e sistema operacional google-analytics&quot;&gt;&lt;/amp-img&gt;
+</description>
+        <pubDate>Tue, 03 Mar 2015 18:24:45 -0300</pubDate>
+        <link>http://metricasboss.com.br/web-analytics-e-mais-do-que-um-grafico-bonitinho.html</link>
+        <guid isPermaLink="true">http://metricasboss.com.br/web-analytics-e-mais-do-que-um-grafico-bonitinho.html</guid>
+        
+        
+        <category>web-analytics</category>
+        
+      </item>
+    
+  </channel>
+</rss>

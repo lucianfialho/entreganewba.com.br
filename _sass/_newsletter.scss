@@ -1,0 +1,22 @@
+.newsletter-signup-post{
+    position: relative;
+    .loading-news{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        margin: -50px;
+        background: #FFF;
+        z-index: 9999;
+        color: $navy;
+        border: 1px solid $navy;
+
+        .message-news{
+            text-align: center;
+            margin: 91px auto 20px;
+        }
+
+        #spinner-news{
+            z-index: 9999;
+        }
+    }
+}

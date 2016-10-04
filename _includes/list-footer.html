@@ -1,0 +1,42 @@
+<div class="container-fluid list-footer text-left">
+    <div class="row">
+        <div class="col-lg-4 footer-box">
+            <ul class="unstyled blocked">
+                {% for my_page in site.pages %}
+                    {% if my_page.title and my_page.is_menu %}
+                        <li>
+                            <a class="page-link" href="
+                                {% if my_page.external_url %}
+                                    {{my_page.external_url}}
+                                {% else %}
+                                    {{ my_page.url | prepend: site.baseurl }}
+                                {% endif %}"><i class="fa {{my_page.ico}}"></i><span class="nav-label">
+                                {% if my_page.menu_title %}
+                                    {{ my_page.menu_title }}
+                                {% else %}
+                                    {{ my_page.title }}
+                                {% endif %}
+                            </span></a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-lg-4 footer-box">
+            <ul class="unstyled inline-blocked">
+            {% for post in site.posts limit:5 %}
+                {% if post.feature_img %}
+                    <li>
+                        <a href="{{post.url}}" class="img-link"><amp-img src="{{post.feature_img}}" width="50" height="50" alt="{{post.title}}"></amp></a>
+                        <a href="{{post.url}}" class="title-link">{{post.title}}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="col-lg-3 footer-box">
+            <div class="fb-page" data-href="https://www.facebook.com/metricasboss" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/metricasboss"><a href="https://www.facebook.com/metricasboss">Métricas Boss</a></blockquote></div></div>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+</div>

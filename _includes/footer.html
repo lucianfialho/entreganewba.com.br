@@ -1,0 +1,33 @@
+<footer class="footer">
+    {% include list-footer.html %}
+    <div class="pull-right">
+        <p class="rss-subscribe">Se inscreva <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+    <div>
+        <strong>Copyright</strong> Entrega Newba &copy; 2016
+    </div>
+</footer>
+<!-- Mainly scripts -->
+<script src="{{ "/js/jquery-2.1.1.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/plugins/lazy-load/jquery.lazyload.min.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/plugins/metisMenu/jquery.metisMenu.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/plugins/slimscroll/jquery.slimscroll.min.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/inspinia.min.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/plugins/pace/pace.min.js" | prepend: site.baseurl }}"></script>
+
+<script async src="{{ "/js/plugins/masonary/masonry.pkgd.min.js" | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/metricasboss.js" | prepend: site.baseurl }}"></script>
+
+<style>.grid .ibox {margin-bottom: 0;}.grid-item {margin-bottom: 25px;width: 300px;}</style>
+<script>
+$(window).load(function() {
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 300,
+        gutter: 10
+    });
+
+    $("img.lazy").lazyload();
+});
+</script>

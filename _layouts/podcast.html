@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="wrapper wrapper-content  animated fadeInRight article spacing-bottom-padding-footer">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                        {% for category in page.categories %}
+                            <button class="btn btn-white btn-xs" type="button">{{category}}</button>
+                        {% endfor %}
+                    </div>
+                    <div class="text-center article-title">
+                        <h1>{{ page.title }}</h1>
+                        <span class="text-muted text-left post-meta">Postado por: {{ page.author.display_name }} -  <i class="fa fa-clock-o"></i> {{ page.date | date: "%b %-d, %Y" }}</span>
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include sidebar.html %}
+    </div>
+</div>
+{% include metadata-post.html %}

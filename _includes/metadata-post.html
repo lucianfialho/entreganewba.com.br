@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+	{
+		"@context": "http:\/\/schema.org",
+        "@type":"Article",
+        "url": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Entrega Newba",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://google.com/logo.jpg",
+              "width": 600,
+              "height": 60
+            }
+        },
+		"author":{
+            "@type": "Person",
+            "name": "{{ page.author.display_name }}"
+        },
+        "headline": "{{page.title}}",
+        "articleBody": "{{ content | strip_html }}",
+    	"datePublished": "{{page.date | date_to_xmlschema }}",
+        "mainEntityOfPage": "True",
+	    "image":{
+            "@list": ["http://metricasboss.com.br/{{page.feature_img}}"]
+		}
+    }
+</script>

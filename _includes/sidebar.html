@@ -1,0 +1,43 @@
+<aside class="nav-white navbar-static-side sidebar-post" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li>
+                <a href="#"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Post recentes</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    {% for p in site.posts limit: 5 %}
+                        <li><a href="{{p.url}}">{{p.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bars"></i> <span class="nav-label">Categorias</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    {% for category in site.categories %}
+                        <li><a href="/{{ category | first | remove:' ' }}"><strong>{{ category | first | replace: '-', ' ' | capitalize}}</strong></a> {% if forloop.last %}.{% else %}{% endif %}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-clock-o"></i> <span class="nav-label">Por data</span><span class="fa arrow"></span></a>
+                <ul>
+                  {% for post in site.posts %}
+
+                    {% unless post.next %}
+                      <h3>{{ post.date | date: '%Y' }}</h3>
+                    {% else %}
+                      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                      {% if year != nyear %}
+                        <h3>{{ post.date | date: '%Y' }}</h3>
+                      {% endif %}
+                    {% endunless %}
+
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                  {% endfor %}
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+</aside>

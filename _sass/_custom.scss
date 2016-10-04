@@ -1,0 +1,415 @@
+@import "syntax-highlighting";
+/* Only demo */
+@media (max-width: 1000px) {
+  .welcome-message {
+    display: none;
+  }
+}
+.ibox-content {
+    img{
+        width: 100%;
+    }
+    h1,h2,h3,h4,h5,h6,p,ol,ul{
+        text-align: left;
+    }
+}
+/* Desativando hover clientes */
+
+.flip-container,.front,.back {
+    width: 240px;
+    height: 240px
+}
+//
+// .flip-container {
+//     -webkit-perspective: 1000;
+//     -moz-perspective: 1000;
+//     -ms-perspective: 1000;
+//     perspective: 1000;
+//     -ms-transform: perspective(1000px);
+//     -moz-transform: perspective(1000px);
+//     -moz-transform-style: preserve-3d;
+//     -ms-transform-style: preserve-3d
+// }
+//
+// .flip-container:hover .back,.flip-container.hover .back {
+//     -webkit-transform: rotateY(0deg);
+//     -moz-transform: rotateY(0deg);
+//     -o-transform: rotateY(0deg);
+//     -ms-transform: rotateY(0deg);
+//     transform: rotateY(0deg);
+//     -webkit-box-shadow: -1px 0px 10px 0px rgba(50,50,50,0.75);
+//     -moz-box-shadow: -1px 0px 10px 0px rgba(50,50,50,0.75);
+//     box-shadow: -1px 0px 10px 0px rgba(50,50,50,0.75)
+// }
+//
+// .flip-container:hover .front,.flip-container.hover .front {
+//     -webkit-transform: rotateY(180deg);
+//     -moz-transform: rotateY(180deg);
+//     -o-transform: rotateY(180deg);
+//     transform: rotateY(180deg)
+// }
+//
+// .flipper {
+//     -webkit-transition: 0.6s;
+//     -webkit-transform-style: preserve-3d;
+//     -ms-transition: 0.6s;
+//     -moz-transition: 0.6s;
+//     -moz-transform: perspective(1000px);
+//     -moz-transform-style: preserve-3d;
+//     -ms-transform-style: preserve-3d;
+//     transition: 0.6s;
+//     transform-style: preserve-3d;
+//     position: relative
+// }
+//
+// .front,.back {
+//     -webkit-backface-visibility: hidden;
+//     -moz-backface-visibility: hidden;
+//     -ms-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     -webkit-transition: 0.6s;
+//     -webkit-transform-style: preserve-3d;
+//     -moz-transition: 0.6s;
+//     -moz-transform-style: preserve-3d;
+//     -o-transition: 0.6s;
+//     -o-transform-style: preserve-3d;
+//     -ms-transition: 0.6s;
+//     -ms-transform-style: preserve-3d;
+//     transition: 0.6s;
+//     transform-style: preserve-3d;
+//     position: absolute;
+//     top: 0;
+//     left: 0
+// }
+//
+// .front {
+//     -webkit-transform: rotateY(0deg);
+//     -ms-transform: rotateY(0deg);
+//     z-index: 2
+// }
+//
+// .back {
+//     -webkit-transform: rotateY(-180deg);
+//     -moz-transform: rotateY(-180deg);
+//     -o-transform: rotateY(-180deg);
+//     -ms-transform: rotateY(-180deg);
+//     transform: rotateY(-180deg)
+// }
+.flip-container {
+    float: left
+}
+
+.flip-container h3 {
+    font-family: "TradeGothicBold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: -10px
+}
+
+.flip-container p {
+    font-size: 12px;
+    line-height: 1.1;
+    margin: 20px 0 0 0
+}
+
+.flip-container .front img {
+    height: 240px;
+    width: 240px
+}
+
+.flip-container .back {
+    padding: 5px 35px
+}
+
+.flip-container .back .btn {
+    padding: 21px 43px 21px 15px;
+    background-position: right 18px
+}
+.landing-page section p {
+    color: #aeaeae;
+    font-size: 17px;
+}
+.cases{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.page-heading{
+    padding: 70px 10px 20px 10px;
+}
+.destaque-quemsomos{
+    font-size: 40rem;
+}
+.loading{
+    background: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: none;
+    z-index: 9999;
+}
+.loading .container{
+    position: absolute;
+    top: 30%;
+    font-size: 24px;
+    text-align: center;
+}
+body[data-smooth-scrolling="0"]{
+    overflow: auto !important;
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+li.alert{
+    text-align: left;
+    line-height: 33px;
+}
+.success-bg {
+    background-color: #1ab394;
+    color: #ffffff;
+}
+.unstyled{
+    padding-left: 0;
+}
+.footer-box{
+    padding-top: 30px;
+    padding: 30px;
+    .img-link,
+    .title-link{
+        float: left;
+    }
+    .title-link{
+        width: 250px;
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+    .blocked li{
+        display: block;
+        padding: 10px 0px;
+    }
+    .blocked li a{
+        font-size: 16px;
+    }
+    .inline-blocked li{
+        display: inline-block;
+    }
+}
+body .sidebar-post.navbar-static-side {
+    right: 0;
+}
+body.mini-navbar .navbar-fixed-top .nav-label,
+body.mini-navbar .unstyled .nav-label{
+    display: inline;
+}
+
+.post-meta{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grid{
+    left: 10px;
+}
+.newsletter-signup-post {
+    background: $navy;
+    padding: 50px;
+    color: #fff;
+    margin: 25px 0;
+    p{
+        font-size: 24px;
+    }
+}
+
+/* Layout LD Full */
+
+.ld-full {
+  background: #eee;
+  .banner {
+    width: 100%;
+    height: 500px;
+    background: url("../img/bg-top.jpg") no-repeat;
+    background-size: 100%;
+  }
+  .content-banner {
+    padding-top: 140px;
+  }
+
+  .titulo {
+    text-transform: uppercase;
+    color: white;
+    font-size: 44px;
+    font-weight: 600;
+  }
+
+  .titulo strong {
+    color: #f26229;
+  }
+
+  .conteudo {
+    background: white;
+    margin-top: 20px;
+    padding: 40px 20px;
+  }
+
+  .conteudo p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .conteudo h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#f26229;
+    font-size: 22px;
+    margin-top: 50px
+  }
+
+  .box-leads {
+    background: #f26229;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .box-leads input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+    margin: 0 5px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: red;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: red;
+  }
+
+  :-ms-input-placeholder {
+     color: red;
+  }
+  .box-leads .campos {
+    width: 300px;
+  }
+  .box-leads .btOk {
+    width: 60px;
+    background: black;
+    color: white;
+  }
+  .logo-metricas {
+    display: block;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+      .titulo {
+        font-size: 26px;
+      }
+      .banner {
+        background-size: initial;
+        height: 440px
+      }
+      .img-banner {
+        width: 300px;
+        display: block;
+        margin: 30px auto 0;
+      }
+      .content-banner {
+        padding-top: 50px;
+      }
+      .box-leads .campos {
+          width: 275px;
+          margin-bottom: 9px;
+      }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .titulo {
+      font-size: 46px;
+    }
+    .banner {
+      height: 380px
+    }
+    .img-banner {
+      width: 270px;
+    }
+    .content-banner {
+      padding-top: 70px;
+    }
+    .box-leads .campos {
+      width: 275px;
+    }
+  }
+}
+.clientes-quem-somos{
+    float:none;
+    margin:auto;
+}
+.navbar.navbar-fixed-top{
+    min-height: 60px;
+    .navbar-header{
+        height: 68px;
+        .navbar-brand{
+            height: 68px;
+            padding: 5px 10px;
+        }
+    }
+    .navbar-nav > li > a{
+        line-height: 38px;
+    }
+}
+
+.form-control{
+    color: #000;
+}
+.none{
+    display: none;
+}
+
+.no-width{
+    width: auto !important;
+    float: left;
+}
+
+#o-que-sao-metricas{
+    .services h3{
+        font-size: 20px;
+        letter-spacing: -1px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .container{
+        padding-bottom: 50px;
+    }
+}

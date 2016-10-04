@@ -1,0 +1,32 @@
+<div class="row border-bottom white-bg">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <i class="fa fa-reorder"></i>
+            </button>
+            <a href="/" class="navbar-brand"><img src="/img/logo-mb-branca.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                {% for my_page in site.pages %}
+                    {% if my_page.title and my_page.is_menu %}
+                    <li>
+                        <a class="page-link" href="
+                            {% if my_page.external_url %}
+                                {{my_page.external_url}}
+                            {% else %}
+                                {{ my_page.url | prepend: site.baseurl }}
+                            {% endif %}"><i class="fa {{my_page.ico}}"></i><span class="nav-label">
+                            {% if my_page.menu_title %}
+                                {{ my_page.menu_title }}
+                            {% else %}
+                                {{ my_page.title }}
+                            {% endif %}
+                        </span></a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</div>
